@@ -39,6 +39,25 @@ void agregarNotificacion(ModuloNotificaciones* modulo, const char* mensaje);
 void mostrarNotificaciones(const ModuloNotificaciones* modulo);
 void marcarComoLeida(ModuloNotificaciones* modulo, int indice);
 
+int main() {
+    ModuloNotificaciones modulo;
+    inicializarModulo(&modulo);
+
+    agregarNotificacion(&modulo, "Bienvenido al sistema bancario ABC");
+    agregarNotificacion(&modulo, "Su préstamo ha sido aprobado");
+    agregarNotificacion(&modulo, "Nuevo servicio de banca en línea disponible");
+
+    std::cout << "Notificaciones sin leer:" << std::endl;
+    mostrarNotificaciones(&modulo);
+
+    marcarComoLeida(&modulo, 0);
+
+    std::cout << "\nNotificaciones después de marcar como leída:" << std::endl;
+    mostrarNotificaciones(&modulo);
+
+    return 0;
+}
+
 // Implementa las funciones aquí
 ```
 Ejemplod e salida:
@@ -80,6 +99,7 @@ struct Transaccion {
     char tipo[20];  // "retiro" o "deposito"
 };
 
+
 struct Cajero {
     int id;
     EstadoCajero estado;
@@ -106,7 +126,25 @@ void agregarCajero(SistemaCajeros* sistema, int id, EstadoCajero estado, double 
 void actualizarEstadoCajero(SistemaCajeros* sistema, int id, EstadoCajero nuevoEstado);
 void registrarTransaccion(SistemaCajeros* sistema, int id, double monto, const char* tipo);
 void generarInforme(const SistemaCajeros* sistema);
+#include <iostream>
 
+int main() {
+    SistemaCajeros sistema;
+    inicializarSistema(&sistema);
+
+    agregarCajero(&sistema, 1, OPERATIVO, 50000.0);
+    agregarCajero(&sistema, 2, OPERATIVO, 30000.0);
+
+    registrarTransaccion(&sistema, 1, 1000.0, "retiro");
+    registrarTransaccion(&sistema, 2, 500.0, "deposito");
+
+    actualizarEstadoCajero(&sistema, 2, EN_MANTENIMIENTO);
+
+    std::cout << "Informe de estado de cajeros:" << std::endl;
+    generarInforme(&sistema);
+
+    return 0;
+}
 // Implementa las funciones aquí
 ```
 Ejemplo de salida:
