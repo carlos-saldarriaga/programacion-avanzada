@@ -3,31 +3,8 @@ Tiempo: 2 horas
 Puntaje total: 100 puntos
 
 ## Diagrama de Clases
-```
-                   +---------------+
-                   |   Vehiculo   |
-                   +---------------+
-                   | -marca: String|
-                   | -modelo: String|
-                   | -año: int     |
-                   +---------------+
-                   | +getMarca()   |
-                   | +getModelo()  |
-                   | +getAño()     |
-                   | +toString()   |
-                   +---------------+
-                          ↑
-          +---------------+---------------+
-          |                             |
-    +-----------+                 +-----------+
-    |   Auto    |                 |   Moto    |
-    +-----------+                 +-----------+
-    | -puertas  |                 | -cilindrada|
-    +-----------+                 +-----------+
-    | +acelerar()|                 | +acelerar()|
-    +-----------+                 +-----------+
+![image](https://github.com/user-attachments/assets/fe73ea55-41d5-4a10-a615-ec2c6e2a4741)
 
-```
 
 ## Consignas (100 puntos totales)
 
