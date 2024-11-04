@@ -3,7 +3,7 @@ Tiempo: 2 horas
 Puntaje total: 100 puntos
 
 ## Diagrama de Clases
-![image](https://github.com/user-attachments/assets/fe73ea55-41d5-4a10-a615-ec2c6e2a4741)
+![image](https://github.com/user-attachments/assets/7f3c3b2e-54c0-43c4-b0c9-64ed57bb0b36)
 
 
 ## Consignas (100 puntos totales)
