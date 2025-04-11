@@ -1,4 +1,4 @@
-# Taller 7: Profundizando en Clases, Atributos y Métodos en Java
+# Taller 8: Profundizando en Clases, Atributos y Métodos en Java
 
 ## Descripción
 Este taller está diseñado para profundizar en conceptos avanzados de Programación Orientada a Objetos en Java, centrándose en la implementación de un Sistema de Gestión de Empleados para una empresa ficticia.
