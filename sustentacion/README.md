@@ -1,5 +1,26 @@
 # Sistema Bancario ABC - Nuevas Funcionalidades
 
+## Instrucciones para la entrega
+
+Esta sustentación consiste en implementar dos módulos para el Sistema Bancario ABC. El código base ya está proporcionado y **solo debes implementar las funciones específicas** que se indican a continuación.
+
+### Importante:
+- **NO modifiques** la estructura del código principal, constantes o funciones de inicialización
+- **NO modifiques** la función `main()` que ya está implementada
+- **SOLO implementa** las funciones que se indican como pendientes
+
+## Formato de entrega
+
+Para cada módulo, entrega **solo** el archivo fuente (.cpp) con las implementaciones de las funciones solicitadas.
+
+## Evaluación
+
+Tu código será evaluado según:
+- Correcta implementación de la funcionalidad requerida
+- Manejo adecuado de los casos límite
+- Coincidencia con las salidas de ejemplo proporcionadas
+
+¡Buena suerte con la implementación!
 
 ## 1. Módulo de Notificaciones Limitadas
 
@@ -9,6 +30,11 @@ Implemente un módulo de notificaciones que permita almacenar hasta 10 notificac
 - Mostrar todas las notificaciones de un socio.
 - Marcar una notificación como leída.
 - Eliminar la notificación más antigua cuando el array esté lleno y se quiera agregar una nueva.
+```cpp
+void agregarNotificacion(ModuloNotificaciones* modulo, const char* mensaje);
+void mostrarNotificaciones(const ModuloNotificaciones* modulo);
+void marcarComoLeida(ModuloNotificaciones* modulo, int indice);
+```
 
 ```cpp
 #include <iostream>
@@ -84,7 +110,12 @@ Implemente un sistema para gestionar el estado de hasta 20 cajeros automáticos 
 - Actualización del saldo disponible en cada cajero.
 - Registro de las últimas 5 transacciones realizadas en cada cajero.
 - Generación de un informe que muestre el estado actual de todos los cajeros.
-
+```cpp
+void agregarCajero(SistemaCajeros* sistema, int id, EstadoCajero estado, double saldoInicial);
+void actualizarEstadoCajero(SistemaCajeros* sistema, int id, EstadoCajero nuevoEstado);
+void registrarTransaccion(SistemaCajeros* sistema, int id, double monto, const char* tipo);
+void generarInforme(const SistemaCajeros* sistema);
+```
 ```cpp
 #include <iostream>
 #include <cstring>
