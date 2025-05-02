@@ -20,7 +20,6 @@ Tu código será evaluado según:
 - Manejo adecuado de los casos límite
 - Coincidencia con las salidas de ejemplo proporcionadas
 
-¡Buena suerte con la implementación!
 
 ## 1. Módulo de Notificaciones Limitadas
 
